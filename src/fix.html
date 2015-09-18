@@ -5,7 +5,9 @@
   <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
 </head>
 <body>
+  <p>This test passes in IE11 as we're forcing the loading of the Event polyfill.</p>
   <div id="mocha"></div>
+  <script src="https://cdn.polyfill.io/v1/polyfill.min.js?features=default,Event|always"></script>
 
   <script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
   <script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>

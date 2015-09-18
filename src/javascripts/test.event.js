@@ -63,7 +63,7 @@ it('should bubble the event', function(done) {
 it('should not trigger an event handler once removed', function() {
   var testEvent = new Event('test', {
     bubbles: true,
-    cancelable: false
+    cancelable: true
   });
   var listener = function() {
     throw new Error('listener was fired, but should have been removed');
